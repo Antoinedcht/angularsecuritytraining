@@ -72,9 +72,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         
-    - if: matrix.language == 'java'
-      name: Build with Maven
-      run: mvn --batch-mode --update-snapshots package
+    # - if: matrix.language == 'java'
+    #  name: Build with Maven
+    #  run: mvn --batch-mode --update-snapshots package
     # - run: |
     #     echo "Run, Build Application using script"
     #     ./location_of_script_within_repo/buildscript.sh
